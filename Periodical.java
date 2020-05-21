@@ -15,7 +15,7 @@ public class Periodical {
     private String genre;
     private String PeriodicalClass;
 
-    // Our constructor with all properties given
+    // Our constructor with all base properties given.
     public Periodical(String Periodicaltype, String Periodicalname, String author, int quantity, String genre,
             String PeriodicalClass) {
         this.Periodicaltype = Periodicaltype;
@@ -26,7 +26,7 @@ public class Periodical {
         this.PeriodicalClass = PeriodicalClass;
     }
 
-    // Getters
+    // Getters methods.
     public String getPeriodicaltype() {
         return Periodicaltype;
     }
@@ -51,7 +51,7 @@ public class Periodical {
         return PeriodicalClass;
     }
 
-    // Setters
+    // Setters methods.
     public void setPeriodicaltype(String Periodicaltype) {
         this.Periodicaltype = Periodicaltype;
     }

@@ -17,7 +17,7 @@ public class Book {
     private String borrower;
     private String bookClass;
 
-    // Our constructor with all properties given
+    // Our constructor with all base properties given.
     public Book(String booktype, String bookname, String author, int quantity, String genre, String checkout,
             String borrower, String bookClass) {
         this.booktype = booktype;
@@ -30,7 +30,7 @@ public class Book {
         this.bookClass = bookClass;
     }
 
-    // Getters
+    // Getters methods.
     public String getbooktype() {
         return booktype;
     }
@@ -63,7 +63,7 @@ public class Book {
         return bookClass;
     }
 
-    // Setters
+    // Setters methods.
     public void setbooktype(String booktype) {
         this.booktype = booktype;
     }
