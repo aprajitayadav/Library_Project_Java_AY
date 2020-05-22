@@ -1,6 +1,8 @@
 package library;
 
-public class GeneralBook extends Book {
+import java.time.LocalDate;
+
+public class GeneralBook extends Book implements Reservable, Loanable {
     private Integer edition, aisle;
     private String location;
 
@@ -36,6 +38,26 @@ public class GeneralBook extends Book {
 
     public void setlocation(String location) {
         this.location = location;
+    }
+
+    @Override
+    public boolean isReservable() {
+        return true;
+    }
+
+    @Override
+    public LocalDate reservedDate() {
+        return LocalDate.now();
+    }
+
+    @Override
+    public int reservationLengthInDays() {
+        return 14;
+    };
+
+    @Override
+    public boolean isLoanable() {
+        return true;
     }
 
     @Override
